@@ -1,0 +1,56 @@
+Form.js
+import React, { Component } from 'react'
+import './Forms.css';
+class forms extends Component {
+  constructor(props){
+    super(props)
+    this.state={
+      username:'',
+      password:'',
+      subject:'Operating System'
+    }
+  }
+  usernamechange=(event)=>{
+    this.setState({
+      username:event.target.value
+    })
+}
+passwordchange= event =>{
+    this.setState({
+      password:event.target.value
+    })
+}
+changesub=event=>{
+  this.setState({
+    subject:event.target.value
+  })
+}
+  render() {
+    return (
+      <div>
+        <h1>Form Component</h1>
+          <form className='fm'>
+        <label>UserName</label>
+        <input type='text' value={this.state.username} onChange={this.usernamechange}/>
+        <br>
+        </br>
+        <label>Password</label>
+        <input type='password' value={this.state.password} onChange={this.passwordchange}/>
+        <br>
+        </br>
+        <label>Subject</label>
+        <select value={this.state.subject} onChange={this.changesub}>
+          <option>Operating System</option>
+          <option>DBMS</option>
+          <option>Computer Network</option>
+        </select>
+        <br>
+        </br>
+        <input type='submit'/>
+      </form>
+      </div>
+      
+    )
+  }
+}
+export default forms
