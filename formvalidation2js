@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+   <form action="">
+    <fieldset>
+
+        <legend>Basic Information</legend>
+        <label for="name">Full Name</label>
+        <input type="text" name="" id=""><br>
+        <br>
+        <label for="birth">Birth Date</label>
+        <input type="date" name="" id="">
+        <br>
+        <br>
+        <label for="gender">Gender</label>
+        Male       <input type="radio" name="gender" id="">
+        Female <input type="radio" name="gender" id="">
+        <br>
+        <br>
+        <label for="add">ADDRESS</label>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br>
+
+        <br>
+        <br>
+        <label for="phone"> Phone Number</label>
+        <input type="tel" name="" id="">
+
+    </fieldset>
+    <fieldset>
+        <legend>Extra Information</legend>
+        <label for="intresr">Intrests</label>
+        &nbsp; Books<input type="checkbox" name="" id="">
+        Movies<input type="checkbox" name="" id="">
+        VideoGames<input type="checkbox" name="" id="">
+        <br>
+        <br>
+        Favourite Color :  <input type="color" name="" id="">
+    </fieldset>
+    <button type="submit">Submit Data</button>
+    <button type="reset">Reset Form</button>
+   
+   </form>
+   <select name="" id="">
+    <option value="n">a</option>
+   
+  
+</body>
+</html>
